@@ -8,13 +8,8 @@ import ReportComponent from './components/ReportComponent';
 import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom"; 
 function App() {
   const design = {color:"red",textAlign:"center",fontSize:"1.5rem"}
-  const initData = [
-    {id:1,title: "ค่าเช่าบ้าน",amount: -2000},
-    {id:2,title: "เงินเดือน",amount: 12000},
-    {id:3,title: "ค่าเดินทาง",amount: -500},
-    {id:4,title: "ขายของ",amount: 2000},
-  ]
-  const [items,setItems] = useState(initData)
+ 
+  const [items,setItems] = useState([])
   const [reportIncome,setReportIncome] = useState(0)
   const [reportExpense,setReportExpense] = useState(0)
 
