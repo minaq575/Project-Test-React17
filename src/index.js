@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import HelloComponent from './components/HelloComponent';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+
+//การสร้างClass Component
+// class HelloComponent extends React.Component{
+//     render(){
+//       return <h1>สวัสดี component สร้างด้วยclass</h1>
+//     }
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <HelloComponent/> */}
+    <App/>
   </React.StrictMode>
 );
 
